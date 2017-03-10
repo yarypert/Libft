@@ -6,16 +6,17 @@
 /*   By: yarypert <yarypert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 00:49:27 by yarypert          #+#    #+#             */
-/*   Updated: 2016/11/21 17:43:30 by yarypert         ###   ########.fr       */
+/*   Updated: 2017/03/11 00:50:44 by yarypert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
+# define BUFF_SIZE 32
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <fcntl.h>
 
 typedef struct		s_list
 {
@@ -45,6 +46,7 @@ void				ft_putnbr_fd(int n, int fd);
 void				ft_strclr(char *s);
 void				ft_striter(char *s, void(*f)(char *));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
+void				ft_void(void);
 
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
 int					ft_strcmp(const char *s1, const char *s2);
@@ -74,6 +76,7 @@ int					ft_isspace(int c);
 int					ft_strequ(char const *s1, char const *s2);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 int					ft_pgcd(int n1, int n2);
+int					get_next_line(int fd, char **line);
 
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
 size_t				ft_strlen(char const *str);
