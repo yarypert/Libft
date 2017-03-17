@@ -6,7 +6,7 @@
 /*   By: yarypert <yarypert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 00:49:27 by yarypert          #+#    #+#             */
-/*   Updated: 2017/03/11 00:50:44 by yarypert         ###   ########.fr       */
+/*   Updated: 2017/03/17 09:49:27 by yarypert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,7 @@ int					ft_strequ(char const *s1, char const *s2);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 int					ft_pgcd(int n1, int n2);
 int					get_next_line(int fd, char **line);
+int					ft_abs(int n);
 
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
 size_t				ft_strlen(char const *str);
